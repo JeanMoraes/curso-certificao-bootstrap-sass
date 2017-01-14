@@ -1,0 +1,10 @@
+@import "../variaveis.scss";
+@import "../mixins.scss";
+
+.topo{
+	width: 500px;
+	height: 100px;
+	margin: auto;
+	padding: $espaco-interno;
+	@include config-brand(#494747, #FFF, 1px solid #000)
+}

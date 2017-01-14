@@ -1,0 +1,21 @@
+{
+  "name": "tarefa-modulo-sass",
+  "version": "1.0.0",
+  "description": "Tarefa Curso Certificação Bootstrap, módulo SASS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Jean Moraes",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-minify-html-2": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

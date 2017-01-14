@@ -1,0 +1,42 @@
+@import "../mixins.scss";
+@import "../variaveis.scss";
+
+.menu{
+	width: 360px;
+	height: 100px;
+	padding: $espaco-interno;
+	float: left;
+
+	ul{
+		font-family: $fonte;
+		margin: 0;
+		padding: 0;
+		float: right;
+		list-style: none;
+
+		li{
+			width: auto;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			margin-left: 10px;
+			float: left;
+			
+			a{
+				@include config-brand(#383838, #FFF, 1px solid #000)
+				border-radius: 5px;
+				display: block;
+				text-decoration: none;
+				padding: $espaco-interno;
+				
+				&:hover{
+					@include config-brand(#308fd6, #000, 1px solid #FFF);
+				}
+
+			}
+
+		}
+
+	}
+
+}

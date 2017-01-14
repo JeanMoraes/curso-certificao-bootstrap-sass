@@ -1,0 +1,5 @@
+@mixin config-brand($cor-de-fundo, $cor-do-texto, $borda){
+	background-color: $cor-de-fundo;
+	color: $cor-do-texto;
+	border: $borda;
+}

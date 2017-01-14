@@ -1,0 +1,15 @@
+@import "../mixins.scss";
+@import "../variaveis.scss";
+
+.brand{
+	@include config-brand(#f4f4f4, #333, 1px solid #333);
+
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	font-family: $fonte;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	
+}
