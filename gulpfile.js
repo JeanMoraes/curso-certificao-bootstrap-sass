@@ -1,7 +1,7 @@
 var gulp = require("gulp");
 var sass = require('gulp-sass');
 var notify 	= require("gulp-notify");
-var minifyHTML = require('gulp-minify-html');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("sass", function(){
 	return gulp.src('./source/scss/style.scss')
@@ -10,16 +10,14 @@ gulp.task("sass", function(){
 				.pipe(gulp.dest("./dist/css"))
 });
 
-gulp.task('minify-html', function() {
-    var opts = {comments:true,spare:true};
-    
+gulp.task('minify-html', function() { 
   gulp.src('./source/*.html')
-    .pipe(minifyHTML(opts))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./dist/'))
 });
 
 gulp.task('tempo-real', function(){
-	gulp.watch('./source/scss/style.scss', ['sass']);
+	gulp.watch('./source/scss/**/*.scss', ['sass']);
 	gulp.watch('./source/*.html', ['minify-html']);
 });
 
